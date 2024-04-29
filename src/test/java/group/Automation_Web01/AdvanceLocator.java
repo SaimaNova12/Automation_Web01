@@ -20,7 +20,7 @@ public class AdvanceLocator extends BaseDriver{
 	   	
 	   	WebElement xpath = driver.findElement(By.xpath("//input[@value='radio3']"));
 	   	xpath.click();
-	   	Thread.sleep(2000);*/
+	   	Thread.sleep(2000);
 	   	
 	   	//cssSelector
 	    driver.findElement(By.cssSelector("#checkBoxOption1")).click();
@@ -62,7 +62,30 @@ public class AdvanceLocator extends BaseDriver{
 	   	Thread.sleep(1000);
 	   	
 	   	driver.findElement(By.xpath("//input[contains(@placeholder,\"Your Name\")]")).sendKeys("Saima");
-	   	Thread.sleep(1000);
+	   	Thread.sleep(1000);*/
+	   	
+	   	//table locators
+	   	String m = driver.findElement(By.xpath("//tr/th[text()='Instructor']")).getText();
+	   	System.out.println(m);
+	   	
+	   	String m1 = driver.findElement(By.xpath("//th[text()='Course']")).getText();
+	   	System.out.println(m1);
+	   	
+	   	String m3 = driver.findElement(By.xpath("//table[@id='product' and @name='courses']")).getText();
+	   	System.out.println(m3);
+	   	
+	   	String m4 = driver.findElement(By.xpath("//table[@id='product'] // tr /th[1]")).getText();
+	   	System.out.println(m4);
+	   	
+	   	String m5 = driver.findElement(By.xpath("//table[@id='product'] // tr /th[2]")).getText();
+	   	System.out.println(m5);
+	   	
+	   	String m6 = driver.findElement(By.xpath("//table[@id='product'] // tr /th[last()]")).getText();
+	   	System.out.println(m6);
+	  
+	  
+	   	
+	   	
 	}
 
 
