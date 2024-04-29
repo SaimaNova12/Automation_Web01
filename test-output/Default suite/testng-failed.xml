@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="group.Automation_Web01.Class6_Iframe">
+      <class name="group.Automation_Web01.Class3WindowHandle">
         <methods>
-          <include name="test"/>
           <include name="start"/>
           <include name="close"/>
+          <include name="window"/>
         </methods>
-      </class> <!-- group.Automation_Web01.Class6_Iframe -->
+      </class> <!-- group.Automation_Web01.Class3WindowHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
